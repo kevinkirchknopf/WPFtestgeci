@@ -1,0 +1,43 @@
+﻿<UserControl x:Class="WPF_quiz.Views.UjKerdes"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WPF_quiz.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Background="#FF42BF94">
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+            <Label>Új Kérdés felvétele</Label>
+            <StackPanel Orientation="Vertical">
+                <Label>A kérdés tartalma: </Label>
+                <TextBox x:Name="txtbxKerdesszoveg"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Vertical">
+                <Label>A kérdés kategóriája:</Label>
+                <TextBox x:Name="txtbxKat"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Vertical">
+                <Label>A kérdés pontszáma:</Label>
+                <ComboBox x:Name="cbxPont"></ComboBox>
+            </StackPanel>
+            <StackPanel Orientation="Vertical">
+                <Label>A kérdés helyes válasza:</Label>
+                <TextBox x:Name="txtHelyesvalasz"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Vertical">
+                <Label>A kérdés 2. válasza:</Label>
+                <TextBox x:Name="txtValasz2"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Vertical">
+                <Label>A kérdés 3. válasza:</Label>
+                <TextBox x:Name="txtValasz3"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Vertical">
+                <Label>A kérdés 4. válasza:</Label>
+                <TextBox x:Name="txtValasz4"></TextBox>
+            </StackPanel>
+            <Button x:Name="btnMentes" Content="Mentés" Click="btnMentes_Click"></Button>
+        </StackPanel>
+    </Grid>
+</UserControl>
